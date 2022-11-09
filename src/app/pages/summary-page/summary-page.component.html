@@ -1,0 +1,58 @@
+<div class="d-flex justify-content-center">
+  <div class="cards-box">
+    <div class="card text-center">
+      <div class="card-header"></div>
+      <div class="card-body">
+        <h4 class="card-title">Welcome</h4>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a [routerLink]="['/navigator']" [queryParams]="{tab: 0}" class="btn btn-primary">See transactions</a>
+      </div>
+      <div class="card-footer text-muted">
+        You have {{total}} transactions
+      </div>
+    </div>
+
+    <div class="d-flex flex-column" style="padding-top: 10px; gap: 10px">
+      <div class="row m-0 flex-nowrap">
+        <div class="col-sm-6 pr-10 pl-0">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">{{incomeCount}}</h4>
+              <p class="card-text">Income</p>
+              <a [routerLink]="['/navigator']" [queryParams]="{tab: 0}" class="btn btn-primary">See all</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 p-0">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">{{investmentsCount}}</h4>
+              <p class="card-text">Investments</p>
+              <a [routerLink]="['/navigator']" [queryParams]="{tab: 3}" class="btn btn-primary">See all</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row m-0 flex-nowrap">
+        <div class="col-sm-6 pr-10 pl-0">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">{{outcomeCount}}</h4>
+              <p class="card-text">Outcome</p>
+              <a [routerLink]="['/navigator']" [queryParams]="{tab: 1}" class="btn btn-primary">See all</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 p-0">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">{{loansCount}}</h4>
+              <p class="card-text">Loans</p>
+              <a [routerLink]="['/navigator']" [queryParams]="{tab: 2}" class="btn btn-primary">See all</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
